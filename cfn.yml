@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Single Node.js Lambda function with hourly and internal invocation.
+
+Resources:
+  NodeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs20.x
+      Timeout: 15
+      CodeUri: ./target
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      Events:
+        FetchTransactionsRule:
+          Type: Schedule
+          Properties:
+            Schedule: cron(0 * * * ? *)  # Runs every hour at the top of the hour
+            Input:
+              source: 'fetch-transactions'
+
+  # Example for allowing other Lambda functions to invoke this function
+  InvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref NodeFunction
+      Principal: lambda.amazonaws.com
+      SourceArn: !GetAtt NodeFunction.Arn
+
+Outputs:
+  LambdaFunctionArn:
+    Value: !GetAtt NodeFunction.Arn
+    Description: ARN of the Lambda function.

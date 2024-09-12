@@ -1,0 +1,228 @@
+{
+  "fail": {
+    "03": "Invalid merchant",
+    "04": "Pick up card (no fraud)",
+    "07": "Pick up card (fraud)",
+    "13": "Invalid amount",
+    "14": "Invalid account number",
+    "15": "No such issuer",
+    "41": "Lost card, pick up",
+    "43": "Stolen card, pick up",
+    "54": "Expired card",
+    "57": "Transaction not permitted—card",
+    "58": "Transaction not permitted—terminal",
+    "59": "Suspected fraud",
+    "62": "Invalid/restricted service code",
+    "63": "Security violation",
+    "64": "Transaction does not fulfill AML requirement",
+    "65": "Exceeds withdrawal limit",
+    "70": "PIN data required",
+    "75": "Allowable number of PIN entry tries exceeded",
+    "78": "Blocked, first use",
+    "82": "Negative CAM, dCVV, iCVV, or CVV results",
+    "93": "Transaction can’t be completed—violation of law",
+    "96": "System error",
+    "97": "Invalid CVV",
+    "1A": "Additional customer authentication required",
+    "R0": "Recurring charge stopped at customer request",
+    "R1": "Recurring charge stopped at customer request"
+  },
+  "retry": {
+    "01": {
+      "message": "Refer to issuer",
+      "visibilityTimeout": 43200
+    },
+    "02": {
+      "message": "Refer to issuer (special condition)",
+      "visibilityTimeout": 43200
+    },
+    "05": {
+      "message": "Do not honor",
+      "visibilityTimeout": 43200
+    },
+    "06": {
+      "message": "Error",
+      "visibilityTimeout": 43200
+    },
+    "10": {
+      "message": "Partial approval",
+      "visibilityTimeout": 43200
+    },
+    "12": {
+      "message": "Invalid transaction",
+      "visibilityTimeout": 43200
+    },
+    "19": {
+      "message": "Re-enter transaction",
+      "visibilityTimeout": 43200
+    },
+    "21": {
+      "message": "No action taken",
+      "visibilityTimeout": 43200
+    },
+    "25": {
+      "message": "Unable to locate record in file",
+      "visibilityTimeout": 43200
+    },
+    "28": {
+      "message": "File temporarily not available for update or inquiry",
+      "visibilityTimeout": 43200
+    },
+    "51": {
+      "message": "Insufficient funds",
+      "visibilityTimeout": 43200
+    },
+    "52": {
+      "message": "No checking account",
+      "visibilityTimeout": 43200
+    },
+    "53": {
+      "message": "No savings account",
+      "visibilityTimeout": 43200
+    },
+    "55": {
+      "message": "Incorrect PIN",
+      "visibilityTimeout": 43200
+    },
+    "61": {
+      "message": "Exceeds approval amount limit",
+      "visibilityTimeout": 43200
+    },
+    "76": {
+      "message": "Unsolicited reversal",
+      "visibilityTimeout": 43200
+    },
+    "79": {
+      "message": "Already reversed",
+      "visibilityTimeout": 43200
+    },
+    "85": {
+      "message": "No reason to decline",
+      "visibilityTimeout": 43200
+    },
+    "86": {
+      "message": "Cannot verify PIN",
+      "visibilityTimeout": 43200
+    },
+    "91": {
+      "message": "Issuer or switch unavailable",
+      "visibilityTimeout": 43200
+    },
+    "92": {
+      "message": "Unable to route transaction",
+      "visibilityTimeout": 43200
+    },
+    "1001": {
+      "message": "Unable to Find Credentials",
+      "visibilityTimeout": 3600
+    },
+    "002760": {
+      "message": "Invalid ApiKey presented",
+      "visibilityTimeout": 43200
+    },
+    "401": {
+      "message": "Authorization has been denied for this request",
+      "visibilityTimeout": 43200
+    },
+    "400": {
+      "message": "Bad Request",
+      "visibilityTimeout": 43200
+    },
+    "502": {
+      "message": "Bad Gateway",
+      "visibilityTimeout": 3600
+    },
+    "002755": {
+      "message": "Data decryption error.",
+      "visibilityTimeout": 43200
+    },
+    "002500": {
+      "message": "Database or data error.",
+      "visibilityTimeout": 43200
+    },
+    "002757": {
+      "message": "Invalid token.",
+      "visibilityTimeout": 43200
+    },
+    "001007": {
+      "message": "Timeout.",
+      "visibilityTimeout": 43200
+    },
+    "004017": {
+      "message": "Invalid check digit.",
+      "visibilityTimeout": 43200
+    },
+    "004003": {
+      "message": "Communication error or bad response.",
+      "visibilityTimeout": 43200
+    },
+    "004040": {
+      "message": "Only Major Credit Cards Accepted.",
+      "visibilityTimeout": 43200
+    },
+    "004304": {
+      "message": "Purchase Amount Adjustment Not Supported.",
+      "visibilityTimeout": 43200
+    },
+    "004848": {
+      "message": "Decryption error.",
+      "visibilityTimeout": 43200
+    },
+    "100204": {
+      "message": "Invalid field: Account Number.",
+      "visibilityTimeout": 43200
+    },
+    "100205": {
+      "message": "Invalid field: Expiration Date.",
+      "visibilityTimeout": 43200
+    },
+    "100206": {
+      "message": "Invalid field: Auth Code.",
+      "visibilityTimeout": 43200
+    },
+    "100207": {
+      "message": "Invalid field: Reference Number.",
+      "visibilityTimeout": 43200
+    },
+    "100208": {
+      "message": "Invalid field: Auth Amount.",
+      "visibilityTimeout": 43200
+    },
+    "100211": {
+      "message": "Invalid field: Purchase Amount.",
+      "visibilityTimeout": 43200
+    },
+    "100212": {
+      "message": "Invalid field: Mag Stripe.",
+      "visibilityTimeout": 43200
+    },
+    "100219": {
+      "message": "Invalid field: TranCode.",
+      "visibilityTimeout": 43200
+    },
+    "100221": {
+      "message": "Invalid field: TStream.",
+      "visibilityTimeout": 43200
+    },
+    "100222": {
+      "message": "Invalid field: Batch Number.",
+      "visibilityTimeout": 43200
+    },
+    "100252": {
+      "message": "Invalid field: Encrypted Format.",
+      "visibilityTimeout": 43200
+    },
+    "100254": {
+      "message": "Invalid field: Encrypted Block.",
+      "visibilityTimeout": 43200
+    },
+    "100255": {
+      "message": "Invalid field: Encrypted Key.",
+      "visibilityTimeout": 43200
+    },
+    "100259": {
+      "message": "Invalid Field - Acquirer Reference Data.",
+      "visibilityTimeout": 43200
+    }
+  }
+}
